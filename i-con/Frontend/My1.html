@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   
+    <header class="navbar">
+        <div class="logo">
+            <h1>I-CONNECT</h1>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button type="submit">Search</button>
+        </div>
+    </header>
+    
+    <nav class="menu-bar">
+        <ul>
+            <li><a href="My1.html"><div title="HOME">HOME</div></a></li>
+            <li><a href="about.html"><div title="ABOUT">ABOUT</div></a></li>
+            <li><a href="services.html"><div title="SERVICES">SERVICES</div></a></li>
+            <li><a href="contact.html"><div title="CONTACT">CONTACT</div></a></li>
+            <li><a href="blog.html"><div title="BLOG">BLOG</div></a></li>
+        </ul>
+    </nav>
+
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slide">
+                <img src="https://via.placeholder.com/1600x600/FF5733/FFFFFF?text=Image+1" alt="Image 1">
+            </div>
+            <div class="slide">
+                <img src="https://via.placeholder.com/1600x600/33FF57/FFFFFF?text=Image+2" alt="Image 2">
+            </div>
+            <div class="slide">
+                <img src="https://via.placeholder.com/1600x600/5733FF/FFFFFF?text=Image+3" alt="Image 3">
+            </div>
+        </div>
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+    </div>
+    
+    
+    <div class="cards">
+        <a href="chat1.html" class="card">
+            <div class="card-background" style="background-image:url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAKgAswMBIgACEQEDEQH/xAAVAAEBAAAAAAAAAAAAAAAAAAAABv/EABQQAQAAAAAAAAAAAAAAAAAAAAD/xAAWAQEBAQAAAAAAAAAAAAAAAAAABwb/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCRAZ1ZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH/2Q==)"></div>
+            <div class="card-content">
+                <p>Connect</p>
+                <h3>About</h3>
+            </div>
+        </a>
+
+        <a href="chat2.html" class="card">
+            <div class="card-background" style="background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAADACAMAAAB/Pny7AAAAA1BMVEX//wCKxvRFAAAAPUlEQVR4nO3BMQEAAADCoPVPbQ0PoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAvgyZwAABCrx9CgAAAABJRU5ErkJggg==)"></div>
+            <div class="card-content">
+                <p>Travel</p>
+                <h3>Services</h3>
+            </div>
+        </a>
+
+        <a href="chat3.html" class="card">
+            <div class="card-background" style="background-image:url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIALMAvwMBIgACEQEDEQH/xAAYAAEAAwEAAAAAAAAAAAAAAAAAAwUGB//EACUQAQACAgECBQUAAAAAAAAAAAABAwIEEQUSBiGBkaEHIjJBcf/EABgBAQADAQAAAAAAAAAAAAAAAAACBAcF/8QAGxEBAQACAwEAAAAAAAAAAAAAAAEDEQIEcTL/2gAMAwEAAhEDEQA/AOTgNmc4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEuzVhTflXXfXsYxxxbVGUY5eX67oifhES7mwAAAAAAAAAAAAAAAAAAAAbD6T9M1+q+N9OjcwwsoxrtzzrzjmMvsmIj3mJ9GPW3hbrl3hvruv1XXriyyjujsmeIy7sZx8/fn0V+5wyZOvk4Y/qy690lxslm1bsbF21dlds3WXW5flnZlOWU/wBmUYLEkk1EQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH/2Q==)"></div>
+            <div class="card-content">
+                <p>Events</p>
+                <h3>Contact</h3>
+            </div>
+        </a>
+
+        <a href="chat4.html" class="card">
+            <div class="card-background" style="background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAD1BMVEUA/wAA/0QA/xEA/yIA/zP2pZZtAAAA/0lEQVR4nO3QNwEAIBAAsaf414yHW1gSCZlpdnOa26wmljhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx8vXkAeAEiToEuY6lAAAAAElFTkSuQmCC)"></div>
+            <div class="card-content">
+                <p>Stationary</p>
+                <h3>Blog</h3>
+            </div>
+        </a>
+    </div>
+
+    
+    <section class="hero">
+        <h2>I-CONNECT</h2>
+        <p>Bridging Students, Empowering Futures..</p>
+    </section>
+
+    
+    <footer class="footer">
+        <p>&copy; 2024 I-Connect. All rights reserved.</p>
+    </footer>
+</body>
+</html>
